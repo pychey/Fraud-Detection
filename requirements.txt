@@ -1,0 +1,9 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+transformers>=4.44.0
+torch>=2.3.0
+sqlalchemy>=2.0.32
+psycopg2-binary>=2.9.9
+streamlit>=1.40.0
+pandas>=2.2.0
