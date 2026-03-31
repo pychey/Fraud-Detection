@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Model
+model/distilbert/model.safetensors
+model/distilbert/tokenizer.json
+
+# Data
+data/
+
+# Env
+.env
+
+# OS
+.DS_Store

@@ -1,5 +1,0 @@
-saved_model/
-.venv/
-__pycache__/
-*.csv
-*.safetensors
