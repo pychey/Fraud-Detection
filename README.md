@@ -210,7 +210,7 @@ Restart the API — you should see no `[WARN] Database unavailable` message on s
 |---|---|---|---|
 | `text` | string | ✅ | The review text to analyze |
 | `review_count` | int | ❌ | Total number of reviews posted by this account |
-| `account_age` | float | ❌ | Account age in years |
+| `account_age` | float | ❌ | Account age in days |
 | `rating` | float (0–5) | ❌ | Star rating given with the review |
 | `time_between_reviews` | float | ❌ | Average days between this account's reviews |
 | `report_count` | int | ❌ | Number of times this account has been reported |
@@ -255,7 +255,7 @@ Rules are evaluated after the ML score and can push the final `confidence` score
 | Rule | Weight Added | Description |
 |---|---|---|
 | `report_count > 10` | +0.3 | Account has been reported more than 10 times |
-| `account_age < 3` | +0.3 | Account is less than 3 years old |
+| `account_age < 3` | +0.3 | Account is less than 3 days old |
 | `time_between_reviews < 1` | +0.3 | Reviews posted less than 1 day apart on average |
 | `rating == 5 and fake_prob > 0.6` | +0.1 | 5-star rating combined with high ML fake score |
 
